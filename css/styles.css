@@ -1,0 +1,180 @@
+:root {
+  --color-primary: #f9d72f;
+  --color-background: #e6e6e6;
+  --color-task: #f7f7f7;
+  --color-success: #36d39a;
+  --color-warning: #fbbe23;
+  --color-error: red;
+  --color-text: white;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.search-section {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-success);
+  margin: 2rem auto 0.5rem;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
+}
+
+.search-section p {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.input-section {
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.input-section input {
+  width: 45%;
+  border: solid 2px var(--color-primary);
+  padding: 0.6rem;
+  outline: 0;
+  font-size: 1.1rem;
+}
+
+.input-section button {
+  padding: 0.8rem 1.3rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: var(--color-primary);
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-todos {
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+}
+
+#delete-all-button {
+  background-color: var(--color-error);
+  color: var(--color-text);
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+}
+
+.table {
+  width: 95%;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+table {
+  width: 100%;
+}
+
+thead {
+  background-color: var(--color-background);
+}
+
+thead th {
+  padding: 10px;
+}
+
+thead th:first-child {
+  border-top-left-radius: 10px;
+}
+
+thead th:last-child {
+  border-top-right-radius: 10px;
+}
+
+tbody td {
+  background-color: var(--color-task);
+  padding: 8px 10px;
+  text-align: center;
+}
+
+tbody td:nth-child(1),
+td:nth-child(2),
+td:nth-child(3) {
+  width: 20%;
+}
+
+tbody td button {
+  padding: 4px 8px;
+  margin: 2px 8px;
+}
+
+tbody td button:nth-child(1) {
+  background-color: var(--color-warning);
+  border: none;
+  padding: 6px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+tbody td button:nth-child(2) {
+  background-color: var(--color-success);
+  width: 50px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+tbody td button:nth-child(3) {
+  background-color: var(--color-error);
+  color: var(--color-text);
+  border: none;
+  padding: 6px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#alert-message {
+  width: 95%;
+  height: 2rem;
+  margin: auto;
+}
+
+.alert {
+  width: 100%;
+  text-align: center;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.alert-success {
+  background-color: var(--color-success);
+}
+
+.alert-error {
+  background-color: var(--color-error);
+  color: var(--color-task);
+}
+
+#edit-button {
+  display: none;
+}
